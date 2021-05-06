@@ -10,8 +10,10 @@ import logoSvg from './assets/img/pizza-logo.svg';
 function App() {
   const [cartTotalPrice, cartItemsCount] = useSelector(state => [
     state.cart.totalPrice,
-    state.cart.count,
+    state.cart.itemsCount,
   ]);
+
+  console.log("asdasd", cartItemsCount)
 
   return (
     <div className="wrapper">
